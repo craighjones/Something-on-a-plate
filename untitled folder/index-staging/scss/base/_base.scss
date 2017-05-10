@@ -1,0 +1,27 @@
+body{
+  color: #000;
+  font-size: 18px;
+}
+
+.container-fluid{
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1110px;
+  width: 100%;
+  
+
+  @include small(){
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+
+ul{
+  padding-left: 0;
+  list-style: none;
+}
+
+.no-gutter{
+  padding: 0;
+}

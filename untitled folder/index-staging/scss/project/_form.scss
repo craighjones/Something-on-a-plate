@@ -1,0 +1,29 @@
+.form-group{
+  input,
+  textarea{
+    border-radius: 0;
+    height: 48px;
+    border: 0 none;
+    font-size: 18px;
+    font-family: $font-light;
+    color: #000;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  textarea{
+    height: 122px;
+    padding-left: 10px;
+  }
+
+  label{
+    font-family: $font-medium;
+    @include font-size(1.8,2.4);
+    font-weight: normal;
+  }
+}
+
+.form-control::-webkit-input-placeholder { color: #000; }
+.form-control:-moz-placeholder { color: #000; }
+.form-control::-moz-placeholder { color: #000; }
+.form-control:-ms-input-placeholder { color: #000; }

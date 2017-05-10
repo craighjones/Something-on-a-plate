@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'brandon_grotesquebold';
+    src: url('brandon_bld-webfont.woff2') format('woff2'),
+         url('brandon_bld-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'brandon_textlight';
+    src: url('../fonts/brandontext-light-webfont.woff2') format('woff2'),
+         url('../fonts/brandontext-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'brandon_textmedium';
+    src: url('../fonts/brandontext-medium-webfont.woff2') format('woff2'),
+         url('../fonts/brandontext-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'brandon_text_regularregular';
+    src: url('../fonts/brandontext-regular-webfont.woff2') format('woff2'),
+         url('../fonts/brandontext-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-family: $font-medium;
+    @include font-size(3.6,4.8);
+    margin: 0;
+
+    @include small(){
+      @include font-size(2.7,3.6);
+  }
+}
+
+h2{
+    font-family: $font-light;
+    margin: 0;
+    @include font-size(3.6,4.8);
+    
+    @include small(){
+      @include font-size(2.7,3.6);
+  }
+}
+
+h3{
+    font-family: $font-medium;
+    @include font-size(1.8,2.4);
+}
+
+h3.blue{
+  color: $main-color;
+
+  a{
+    font-family: $font-medium;
+    text-decoration: none;
+  }
+}
+
+h4{
+    font-family: $font-medium;
+    @include font-size(1.4,1.8);
+}
+
+p{
+    font-family: $font-light;
+    @include font-size(1.8,2.4);
+}
+
+a{
+    font-family: $font-light;
+    text-decoration: underline;
+    transition: color 0.225s ease;
+    color: $main-color;
+
+    &:hover{
+      color: $hover-color;
+    }
+
+    &:active{
+      color: $click-color;
+    }
+}

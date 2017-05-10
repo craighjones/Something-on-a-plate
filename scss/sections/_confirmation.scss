@@ -1,0 +1,4 @@
+.section__confirmation{
+  @include make-sm-column(10);
+  @include make-md-column(6);
+}

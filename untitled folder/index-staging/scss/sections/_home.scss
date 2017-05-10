@@ -1,0 +1,243 @@
+
+/* =========================================================================
+   Plan
+   ========================================================================= */
+
+.plan{
+  padding-top: 70px;
+
+  @include small(){
+    padding-top: 80px;
+  }
+
+  @include medium(){
+    padding-top: 52px;
+  }
+}
+
+.plan__title{
+  @include make-md-column(12);
+  margin-bottom: 13px;
+}
+
+.plan__item{
+  @include make-sm-column(4);
+
+  @include small(){
+    margin-bottom: 50px;
+  }
+
+  h3{
+    margin-bottom: 25px;
+  }
+
+  i{
+    color: $hover-color;
+    font-size: 4em;
+  }
+}
+
+.plan__item--escape{
+  img{
+    width: 46px;
+    margin-bottom: 7px;
+  }
+}
+
+.plan__item--ride{
+  img{
+    width: 64px;
+    margin-bottom: 18px;
+  }
+}
+
+.plan__item--fuel{
+  img{
+    width: 56px;
+    margin-bottom: 16px;
+  }
+}
+
+.plan__btn{
+  @include make-md-column(12);
+  margin-top: 32px;
+
+  @include small(){
+    margin-top: 0;
+  }
+}
+
+/* =========================================================================
+   Banner
+   ========================================================================= */
+
+.banner__wrap{
+  max-width: 1410px;
+  width: 100%;
+  margin: 98px auto 68px auto;
+
+  @include small(){
+    margin: 72px 0 82px 0;
+  }
+}
+
+.banner__img{
+  height: 336px;
+  background: url(../img/banner.jpg) 50% 50%;
+  width: 100%;
+}
+
+.banner__content{
+  color: #FFF;
+  @include make-md-column(6);
+  @include make-lg-column(4);
+  margin-top: 72px;
+
+  .btn{
+    margin-top: 38px;
+  }
+}
+
+
+
+/* =========================================================================
+   News
+   ========================================================================= */
+
+.news__title{
+  @include make-sm-column(4);
+  @include make-md-column(3);
+
+  h2{
+    margin-bottom: 20px;
+  }
+
+  ul{
+    font-family: $font-light;
+    margin-top: 50px;
+
+    li{
+      margin-bottom: 10px;
+
+      a{
+        text-decoration: none;
+
+        &:hover{
+          text-decoration: underline;
+
+          span{
+            background-color: $hover-color;
+          }
+        }
+
+        &:active{
+          span{
+            background-color: $click-color;
+          }
+        }
+      }
+    }
+
+    span{
+      background-color: $main-color;
+      color: #FFF;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      text-align: center;
+      vertical-align: baseline;
+      margin-right: 8px;
+      transition: background- 0.225s ease;
+
+      i{
+        font-size: 12px;
+        vertical-align: middle;
+        line-height: 24px;
+        display: block;
+      }
+    }
+  }
+}
+
+.news__posts{
+  @include make-sm-column(12);
+  @include make-md-column(8);
+  @include make-md-column-offset(1);
+  padding-left: 0;
+
+  @include small(){
+    padding: 0;
+    margin-top: 60px;
+
+  }
+
+  @include medium(){
+    margin-top: 60px;
+  }
+}
+
+.news__post{
+  @include make-sm-column(6);
+
+  img{
+    width: 100%;
+    margin-bottom: 22px;
+  }
+
+  @include small(){
+    margin-bottom: 50px;
+  }
+}
+
+/* =========================================================================
+   sign-up
+   ========================================================================= */
+
+.sign-up{
+  margin: 92px 0 142px 0;
+
+  @include small(){
+    margin-top: 20px; 
+  }
+}
+
+.sign-up__wrap{
+  background-color: $gray;
+  padding-top: 42px;
+  padding-bottom: 105px;
+
+  @include small(){
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 70px;
+  }
+}
+
+
+.sign-up__content{
+  @include make-sm-column(6);
+  @include make-sm-column-offset(3);
+  @include make-md-column(4);
+  @include make-md-column-offset(4);
+
+  h2{
+    margin-bottom: 30px;
+  }
+
+  form{
+    margin-top: 20px;
+
+    label{
+      font-family: $font-medium;
+    }
+
+    .btn{
+      margin-top: 10px;
+    }
+  }
+
+  .form-group{
+    margin-bottom: 35px;
+  }
+}

@@ -1,0 +1,59 @@
+
+.hero--main{
+  background: url(../img/hero.jpg) 50% 50%;
+  background-size: cover;
+  height: 579px;
+
+  @include small(){
+    height: 430px;
+  }
+
+  @include medium(){
+    height: 526px;
+  }
+
+  .hero__content{
+    color: #FFF;
+    margin-top: 124px;
+
+    @include small(){
+      margin-top: 75px;
+    }
+
+    .btn{
+      margin-top: 47px;
+    }
+  }
+}
+
+.hero--section{
+  .hero__content{
+    color: #000;
+    margin-top: 60px;
+    padding-bottom: 100px;
+  }
+}
+
+.hero--section{
+  background: #FFF; 
+}
+
+.hero__content--wrap{
+  @include make-md-column(9);
+  @include make-lg-column(8);
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .hero--main {
+    background: url(../img/hero@2x.jpg) 50% 50%;
+    background-size: cover;
+  }
+}

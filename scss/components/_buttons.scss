@@ -1,0 +1,62 @@
+.btn,
+.btn--primary,
+.btn--secondary{
+  border-radius: 2px;
+  height: 48px;
+  width: 240px;
+  line-height: 48px;
+  font-size: 18px;
+  line-height: 48px;
+  font-family: $font-medium;
+  padding: 0;
+  border: 0 none;
+  transition: background-color 0.225s ease;
+  text-decoration: none;
+
+  @include small(){
+    width: 100%;
+  }
+
+  @include medium(){
+    max-width: 330px;
+    width: 100%;
+  }
+
+  i{
+    font-size: 24px;
+    margin-right: 10px;
+    vertical-align: middle; 
+  }
+
+  &:hover{
+    color: #FFF;
+    background-color: $hover-color;
+  }
+
+  &:active{
+    background-color: $click-color;
+  }
+
+  &:focus{
+    color:#FFF;
+  }
+}
+
+.btn--primary{
+  background-color: $main-color;
+  color: #FFF;
+}
+
+
+.btn--secondary{
+  background-color: #FFF;
+  color: $main-color;
+
+  &:active{
+    color:#FFF;
+  }
+
+  &:focus{
+    color: $main-color;
+  }
+}

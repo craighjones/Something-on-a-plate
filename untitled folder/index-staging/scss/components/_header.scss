@@ -1,0 +1,178 @@
+.mainHeader--section{
+
+  @include small(){
+    border-bottom: 1px solid #c2c2c2;
+    height: 74px;
+  }
+
+  .icon-menu{
+    color: $main-color;
+    transition: color 0.225s ease;
+
+    &:hover{
+      color: $hover-color;
+    }
+  }
+}
+
+.navbar-nav{
+  padding-top: 46px;
+
+  li{
+    a{
+      padding: 0;
+      margin-left: 22px;
+      color: #FFF;
+      font-size: 18px;
+      font-family: $font-medium;
+
+      &:hover{
+        background: none;
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+}
+
+
+.mainHeader__nav{
+  float: right;
+  margin-top: 32px;
+
+  @include small(){
+    display: none;
+  }
+
+  ul{
+    li{
+      display: inline-block;
+      margin-left: 22px;
+
+      @include medium(){
+        margin-left: 17px;
+      }
+      
+      &:first-of-type{
+        margin-left: 0;
+      }
+
+      a{
+        padding: 0;
+        font-size: 18px;
+        font-family: $font-medium;
+        text-decoration: none;
+
+        &:hover{
+          background: none;
+        }
+      }
+    }
+  }
+}
+
+.mainHeader__nav--main{
+  a{
+    color: #FFF;
+
+    &:hover{
+      border-bottom: 2px solid white;
+    }
+  }
+
+  .active a{
+    border-bottom: 2px solid #FFF;
+  }
+}
+
+.mainHeader__nav--section{
+  a{
+    color: $main-color;
+
+    &:hover{
+      border-bottom: 2px solid $main-color;
+    }
+  }
+
+  .active a{
+    border-bottom: 2px solid $main-color;
+  }
+}
+
+.mainHeader__container{
+  @include make-sm-column(12);
+}
+
+.navbar-brand{
+  img{
+    width: 188px;
+
+    @include small(){
+      width: 110px;
+    }
+  }
+}
+
+.icon-menu{
+  color: #FFF;
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  cursor: pointer;
+} 
+
+
+.menu-open{
+  height: 100%;
+  width: 100%;
+  background: #FFF;
+  color: #FFF;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+  text-align: center;
+  padding: 20px;
+}
+
+.menu-open.is-active{
+  visibility: visible;
+    opacity: 1;
+}
+
+.close{
+  color: $main-color;
+  opacity: 1;
+}
+
+.close--trigger{
+  position: absolute;
+  right: -2px;
+  top: 10px;
+  color: $main-color;
+  transition: color 0.225s ease;
+
+  &:hover{
+    color: $hover-color;
+  }
+}
+
+.menu-open-nav{
+  margin-top: 50px;
+  li{
+    margin-bottom: 5px;
+    
+    a{
+      font-family: $font-medium;
+      @include font-size(2.7);
+      text-decoration: none;
+    }
+  }
+
+  .active a{
+    border-bottom: 2px solid $main-color;
+  }
+}

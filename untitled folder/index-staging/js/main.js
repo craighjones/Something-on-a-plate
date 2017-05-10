@@ -1,0 +1,1 @@
+function nav(){var n,i,e,o,c;c=$(".menu"),i=$(".close"),o=$(".menu-open"),n=$("body"),e=function(){n.css({overflow:"inherit",height:"inherit"}),o.removeClass("is-active")},c.on("click",function(){return o.addClass("is-active"),n.css({overflow:"hidden",height:"100%"})}),i.on("click",e)}$(function(){nav()});

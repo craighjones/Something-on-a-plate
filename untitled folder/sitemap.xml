@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://www.somethingonaplate.com/home.html</loc>
+  <lastmod>2014-12-23T12:10:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.somethingonaplate.com/nutritional_therapy.html</loc>
+  <lastmod>2014-12-23T12:10:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.somethingonaplate.com/accessible_nutrition.html</loc>
+  <lastmod>2014-12-23T12:10:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.somethingonaplate.com/consultations.html</loc>
+  <lastmod>2014-12-23T12:10:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.somethingonaplate.com/groups.html</loc>
+  <lastmod>2014-12-23T12:10:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.somethingonaplate.com/muddy_cwtch.html</loc>
+  <lastmod>2014-12-23T12:10:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.somethingonaplate.com/about.html</loc>
+  <lastmod>2014-12-23T12:10:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.somethingonaplate.com/contact.html</loc>
+  <lastmod>2014-12-23T12:10:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>

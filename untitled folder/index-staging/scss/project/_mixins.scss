@@ -1,0 +1,30 @@
+@mixin font-size($size: 1.6, $line: $size * 1.5){
+  font-size:   ($size * 10) + px;
+  line-height: ($line * 10) + px;
+  font-size:   $size + rem;
+  line-height: $line + rem;
+}
+
+@mixin font-smooth{
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+//Breakpoints
+
+@mixin small() {
+  @media (min-width: 320px) and (max-width: 640px) {
+    @content;
+  }
+}
+@mixin medium() {
+  @media (min-width: 641px) and (max-width: 800px) {
+    @content;
+  }
+}
+@mixin large() {
+  @media (min-width: 801px) and (max-width: 1050px) {
+    @content;
+  }
+}

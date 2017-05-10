@@ -1,0 +1,168 @@
+
+/* =========================================================================
+   Newsletter
+   ========================================================================= */   
+
+.newsletter{
+  background-color: $yellow;
+  padding: 75px 0 50px 0;
+}
+
+.newsletter_icon{
+  @include make-sm-column(2);
+  @include make-md-column(3);
+
+  .icon-divider{
+    font-size: 12px;  
+  }
+}
+
+.newsletter__main{
+  @include make-sm-column(6);
+
+  .btn{
+    max-width: 240px;
+    width: 100%;
+
+    @include small(){
+      max-width: 100%;
+    }
+    @include medium(){
+      max-width: 100%;
+    }
+
+    &:active{
+      color: #fff;
+    }
+  }
+
+  p{
+    margin-bottom: 26px;
+  }
+
+  h3{
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  form{
+    margin-bottom: 14px;
+  }
+}
+
+.newsletter__find-us{
+  @include make-sm-column(4);
+  @include make-sm-column-offset(0);
+  @include make-md-column(2);
+  @include make-md-column-offset(1);
+
+  ul{
+    list-style: none;
+    padding-left: 0;
+
+    li{
+      margin-bottom: 12px; 
+
+      a{
+        color: #000;
+        font-family: $font-light;
+        text-decoration: none;
+
+        &:hover{
+          text-decoration: underline;
+
+          span{
+            background-color: $hover-color;
+          }
+        }
+
+        &:active{
+          span{
+            background-color: $click-color;
+          }
+        }
+      }
+
+      span{
+        background-color: $main-color;
+        color: #FFF;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: baseline;
+        margin-right: 8px;
+        transition: background-color 0.225s ease;
+
+        i{
+          font-size: 12px;
+          vertical-align: middle;
+          line-height: 24px;
+          display: block;
+        }
+      }
+    }
+  }
+
+  h3{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+
+.mainFooter{
+  border-top: 1px solid #000;
+  margin-top: 56px;
+}
+
+.mainFooter__content{
+  @include make-md-column(12);
+  padding-top: 20px; 
+
+  h4{
+    float: left;
+
+    @include small(){
+      float: none;
+    }
+  }
+
+  nav{
+    float: right;
+
+    @include small(){
+      float: none;
+    }
+  }
+
+  ul{
+    li{
+      display: inline-block;
+      margin-left: 10px;
+
+      a{
+        font-family: $font-medium;
+        @include font-size(1.4,1.8);
+        color: #000;
+        text-decoration: none;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .mainFooter__mobile{
+    float: none;
+    overflow: hidden;
+    
+    li{
+      width: 42%;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
